@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login|register</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_842293_2fbn73tm9ws.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_842547_cv0isram6zo.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <a class="login" href="#">
+            <i class="iconfont icon-login"></i>
+        </a>
+    </header>
+
+    <main>
+        <div class="turn-modal login">
+            <div class="modal login-modal">
+                <a href="#" class="close">
+                    <i class="iconfont icon-close"></i>
+                </a>
+                <div class="pad">
+                    <a href="#" class="login active">login</a>
+                    <a href="#" class="register">register</a>
+                </div>
+                <div class="container">
+                    <div class="errortips"></div>
+                    <form action="/login" method="post">
+                        <div class="input-field">
+                            <i class="iconfont icon-user"></i>
+                            <input type="text" name="username" placeholder="用户名">
+                        </div>
+                        <div class="input-field">
+                                <i class="iconfont icon-lock"></i>
+                                <input type="password" name="password" placeholder="密码">
+                        </div>
+                        <div class="input-field">
+                                <input type="submit" value="登录">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal register-modal">
+                <a href="#" class="close iconfont icon-close"></a>
+                <div class="pad">
+                    <a href="#" class="login">login</a>
+                    <a href="#" class="register active">register</a>
+                </div>
+                <div class="container">
+                    <div class="errortips"></div>
+                    <form action="/register" method="post">
+                        <div class="input-field">
+                            <i class="iconfont icon-user"></i>
+                            <input type="text" name="username" placeholder="用户名">
+                        </div>
+                        <div class="input-field">
+                            <i class="iconfont icon-lock"></i>
+                            <input type="password" name="password" placeholder="密码">
+                        </div>
+                        <div class="input-field">
+                            <i class="iconfont icon-lock"></i>
+                            <input type="password" name="password2" placeholder="再次输入密码">
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" value="注册">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
